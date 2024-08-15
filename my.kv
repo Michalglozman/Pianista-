@@ -1,0 +1,409 @@
+#:import Factory kivy.factory.Factory
+WindowManager:
+    OpenWindow:
+    MainWindow:
+    BeginnerWindow:
+    IntermediateWindow:
+    ExpertWindow:
+    AbsoluteHearing:
+    NoteReading:
+    GameOver:
+
+<Button>
+    background_down:"lightsteelblue"
+    font_name:'Amadeus'
+    halign: 'center'
+    size_hint:0.21,0.2
+    background_normal:''
+    background_color: (212/255, 186/255, 154/255,1)
+    font_size: 28
+<Absolute_button@Button>:
+    font_size: 50
+    size_hint:0.11,0.12
+    disabled: True
+<Choose_Mode@Label>:
+    font_size: 50
+    pos_hint:{"x":0,"y":0.22}
+    text:"Please choose mode"
+<Go_Back_Button@Button>:
+    size_hint:0.15,0.15
+    text:"Go Back"
+<Information@Button>:
+
+    size_hint:0.10,0.12
+    pos_hint:{"right":0.98,"y":0.81}
+    font_size: 40
+    text:"i"
+    background_color: (0,0,0,0)
+	background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (212/255, 186/255, 154/255,1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [58]
+<Popup>:
+    separator_color:'white'
+    #background_color: (0,0,0,0)
+    title_size:20
+    title: "Instructions"
+    size_hint: .5, .5
+    auto_dismiss: True
+
+<Absolute_popup@Popup>:
+    Label:
+        color:'white'
+        size_hint: 0.6,0.2
+        pos_hint: {"x":0.2,"y":0.5}
+        font_name:'Arial'
+        font_size:22
+        text: "To start developing your sense \nof absolute hearing:\nThe system will generate a single note.\nPick the note you think you heard.\n\nEnjoy!"
+
+<Note_reading_popup@Popup>:
+    Label:
+        color:'white'
+        size_hint: 0.6,0.2
+        pos_hint: {"x":0.2,"y":0.45}
+        font_name:'Arial'
+        font_size:17.5
+        text: "In order to improve note reading: \nThe system will randomly generate a single note \nand show it to you on the screen. \nClick on the same note on the piano. \nIf the answer is correct the note turns green. \nIf you made a mistake the note you clicked \nturns red and you can try again.\n\nEnjoy!"
+
+<ScatterLayout>
+    Choose_Mode:
+    Button:
+        pos_hint:{"x":0.25,"y":0.3}
+        text:"Rhythm\npractice"
+        disabled: True
+        on_release:
+            app.root.transition.direction = "left"
+            app.root.current = "Rhythm practice"
+
+    Button:
+        pos_hint:{"x":0.51,"y":0.3}
+        text:"Note reading\npractice"
+        on_release:
+            app.root.current = "NoteReading"
+
+    Go_Back_Button:
+        on_release:
+            app.root.transition.direction = "right"
+            app.root.current = "main"
+
+<FloatLayout>
+        #title
+    canvas.before:
+        Color:
+            rgba:(242/255, 213/255, 213/255, 1)
+        Rectangle:
+            pos:self.pos
+            size:self.size
+<Label>
+    color: (0.2, 0, 0,1)
+    font_name:'Amadeus'
+<OpenWindow>:
+    name:"open"
+
+<MainWindow>:
+    name:"main"
+    FloatLayout:
+        Label:
+            font_size: 50
+            pos_hint:{"x":0,"y":0.22}
+            text:"Welcome to Pianista ! \n Please choose level"
+
+        Button:
+            pos_hint:{"x":0.15,"y":0.3}
+            text:"Beginner"
+            #if this button is pressed change experty level to beginner
+            on_press: root.change_experty(0)
+            on_release:
+                root.manager.transition.direction = "left"
+                app.root.current = "Beginner"
+
+        Button:
+            pos_hint:{"x":0.40,"y":0.3}
+            text:"Intermediate"
+            #if this button is pressed change experty level to intermediate
+            on_press: root.change_experty(1)
+            on_release:
+                app.root.current="Intermediate"
+                root.manager.transition.direction = "left"
+
+        Button:
+            pos_hint:{"x":0.65,"y":0.3}
+            text:"Expert"
+            on_release:
+                root.manager.transition.direction = "left"
+                app.root.current="Expert"
+
+<BeginnerWindow>:
+    name: "Beginner"
+    FloatLayout:
+    ScatterLayout:
+
+<IntermediateWindow>:
+    name:"Intermediate"
+    FloatLayout:
+    ScatterLayout:
+
+<ExpertWindow>:
+    name:"Expert"
+    FloatLayout:
+
+        Choose_Mode:
+        Button:
+            pos_hint:{"x":0.25,"y":0.3}
+            text:"Absolute\nhearing"
+            on_release:
+                root.manager.transition.direction = "left"
+                app.root.current = "AbsoluteHearing"
+
+        Button:
+            pos_hint:{"x":0.51,"y":0.3}
+            text:"Composer\nmode"
+            disabled: True
+
+        Go_Back_Button:
+            on_release:
+                root.manager.transition.direction = "right"
+                app.root.current = "main"
+<GameOver>:
+    name: 'GameOver'
+    Label:
+        text : "Game Over"
+        font_size : 100
+    Go_Back_Button:
+        on_release:
+            root.manager.transition.direction = "right"
+            app.root.current = "main"
+
+<AbsoluteHearing>:
+    name:"AbsoluteHearing"
+    FloatLayout:
+
+        Label:
+            font_size: 50
+            pos_hint:{"x":0,"y":0.22}
+            text:"Which note was being played?"
+        Information:
+            font_name:'Times'
+            on_press:  Factory.Absolute_popup().open()
+
+        Absolute_button:
+            font_size: 28
+            id: 10
+            pos_hint:{"x":0.03,"y":0.8}
+            text: 'Start'
+            disabled: False
+            on_press:
+                root.start()
+
+        Absolute_button:
+            font_size: 28
+            pos_hint:{"x":0.15,"y":0.8}
+            text: 'Hear\nAgain'
+            id: 8
+            on_press:
+                root.play_generate_note()
+
+        Absolute_button:
+            font_size: 28
+            icon: 'images/lamp.png'
+            text: 'Answer'
+            id: 9
+            pos_hint:{"x":0.27,"y":0.8}
+            on_press:
+                root.get_answer()
+        Label:
+            id : 50
+            pos_hint:{"x":0.15,"y":0.37}
+            font_size: 30
+
+        Absolute_button:
+            pos_hint:{"x":0.06,"y":0.4}
+            text:"c"
+            id: 1
+            on_press:
+                root.note_clicked(self)
+
+        Absolute_button:
+            text:"d"
+            id: 2
+            pos_hint:{"x":0.185,"y":0.4}
+            on_press:
+                root.note_clicked(self)
+
+        Absolute_button:
+            id: 3
+            pos_hint:{"x":0.31,"y":0.4}
+            text:"e"
+            on_press:
+                root.note_clicked(self)
+
+        Absolute_button:
+            text:"f"
+            id: 4
+            pos_hint:{"x":0.435,"y":0.4}
+            on_press:
+                root.note_clicked(self)
+        Absolute_button:
+            text:"g"
+            id: 5
+            pos_hint:{"x":0.56,"y":0.4}
+            on_press:
+                root.note_clicked(self)
+
+        Absolute_button:
+            text:"a"
+            id: 6
+            pos_hint:{"x":0.685,"y":0.4}
+            on_press:
+                root.note_clicked(self)
+
+        Absolute_button:
+            text:"b"
+            id: 7
+            pos_hint:{"x":0.81,"y":0.4}
+            on_press:
+                root.note_clicked(self)
+
+    Go_Back_Button:
+        on_release:
+            root.end_game()
+
+<PBMode>:
+    CountDown:
+        id: pb
+        max:120
+
+<NoteReading>:
+    name: "NoteReading"
+    canvas.before:
+        Color:
+            rgba:(242/255, 213/255, 213/255, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    canvas:
+        Color:
+            rgba:(0,0,0, 1)
+        Rectangle:
+            pos: 0, root.top
+            size: root.width, 200
+
+        # Treble clef lines
+        Rectangle:
+            group: 'treblelines'
+            pos: 0, root.top - self.topline_treble
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'treblelines'
+            pos: 0, root.top - self.topline_treble - self.barspace
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'treblelines'
+            pos: 0, root.top - self.topline_treble - self.barspace * 2
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'treblelines'
+            pos: 0, root.top - self.topline_treble - self.barspace * 3
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'treblelines'
+            pos: 0, root.top - self.bottomline_treble
+            size: root.width, self.barheight
+
+        # Bass clef lines
+        Rectangle:
+            group: 'basslines'
+            pos: 0, root.top - self.topline_bass
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'basslines'
+            pos: 0, root.top - self.topline_bass - self.barspace
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'basslines'
+            pos: 0, root.top - self.topline_bass - self.barspace * 2
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'basslines'
+            pos: 0, root.top - self.topline_bass - self.barspace * 3
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'basslines'
+            pos: 0, root.top - self.bottomline_bass
+            size: root.width, self.barheight
+
+        Rectangle:
+            group: 'noteline1'
+            pos: (root.width/2 - (self.barwidth / 2), root.top - self.bottomline_treble)
+            size: (self.barwidth, self.barheight)
+
+        Rectangle:
+            group: 'noteline2'
+            pos: (root.width/2 - (self.barwidth / 2)+5,  root.top - self.bottomline_treble - self.barspace * 2)
+            size: (self.barwidth, self.barheight)
+    Image:
+        source: "images/clef.png"
+        keep_ratio: False
+        pos: -370, root.top - 585
+
+    Image:
+        source: "images/bass1.png"
+        allow_stretch: False
+        keep_ratio: False
+        pos: -365, root.top - 692
+
+    Label:
+        font_size: 50
+        pos_hint:{"x":0,"y":0.22}
+        text:"Note Reading Practice"
+
+    Label:
+        id: noteGuess
+        text: "Identify The Note"
+        font_size: 40
+        color: (0.8, 0.8, 0.8)
+        pos: (root.width / 2 - 50, root.top - 100)
+
+    Information:
+        font_name:'Times'
+        on_press:  Factory.Note_reading_popup().open()
+
+    Absolute_button:
+        font_size: 28
+        pos_hint:{"x":0.025,"y":0.8}
+        text: 'Start'
+        disabled: False
+        on_press:
+            root.start_game_thread()
+            disabled: True
+
+    Button:
+        font_size: 28
+        id: 10
+        size_hint:0.15,0.15
+        text:"Go Back"
+        disabled: False
+        on_press:
+            app.root.current = "main"
+            root.join_game_thread()
+        on_release:
+            root.manager.transition.direction = "right"
+
+#    Go_Back_Button:
+#        on_press:
+#            root.join_game_thread()
+#        on_release:
+#            root.manager.transition.direction = "right"
+#            app.root.current = "main"

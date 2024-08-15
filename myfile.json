@@ -1,0 +1,482 @@
+[
+    {
+        "name": "C1",
+        "fq": 32.7,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/c1.wav"
+    },
+    {
+        "name": "C#1",
+        "fq": 34.65,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": null
+    },
+    {
+        "name": "D1",
+        "fq": 36.71,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/d1.wav"
+    },
+    {
+        "name": "D#1",
+        "fq": 38.89,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": null
+    },
+    {
+        "name": "E1",
+        "fq": 41.2,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/e1.wav"
+    },
+    {
+        "name": "F1",
+        "fq": 43.65,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/f1.wav"
+    },
+    {
+        "name": "F#1",
+        "fq": 46.25,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": null
+    },
+    {
+        "name": "G1",
+        "fq": 49.0,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/g1.wav"
+    },
+    {
+        "name": "G#1",
+        "fq": 51.91,
+        "octave":"null",
+          "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": null
+    },
+    {
+        "name": "A1",
+        "fq": 55.0,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/a1.wav"
+    },
+    {
+        "name": "A#1",
+        "fq": 58.27,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": null
+    },
+    {
+        "name": "B1",
+        "fq": 61.74,
+        "octave":"null",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/b1.wav"
+    },
+    {
+        "name": "C2",
+        "fq": 65.41,
+        "octave":"great",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/c2.wav"
+    },
+    {
+        "name": "C#2",
+        "fq": 69.3,
+        "octave":"great",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": null
+    },
+    {
+        "name": "D2",
+        "fq": 73.42,
+        "octave":"great",
+        "pos_x": "50",
+        "pos_y": "118",
+        "audio_file": "wav_files/d2.wav"
+    },
+    {
+        "name": "D#2",
+        "fq": 77.78,
+        "octave":"great",
+        "pos_x": "63",
+        "pos_y": "118",
+        "audio_file": null
+    },
+    {
+        "name": "E2",
+        "fq": 82.41,
+        "octave":"great",
+        "pos_x": "76",
+        "pos_y": "128",
+        "audio_file": "wav_files/e2.wav"
+    },
+    {
+        "name": "F2",
+        "fq": 87.31,
+        "octave":"great",
+        "pos_x": "102",
+        "pos_y": "138",
+        "audio_file": "wav_files/f2.wav"
+    },
+    {
+        "name": "F#2",
+        "fq": 92.5,
+        "octave":"great",
+        "pos_x": "115",
+        "pos_y": "138",
+        "audio_file": null
+    },
+    {
+        "name": "G2",
+        "fq": 98.0,
+        "octave":"great",
+        "pos_x": "128",
+        "pos_y": "148",
+        "audio_file": "wav_files/g2.wav"
+    },
+    {
+        "name": "G#2",
+        "fq": 103.83,
+        "octave":"great",
+        "pos_x": "141",
+        "pos_y": "148",
+        "audio_file": null
+    },
+    {
+        "name": "A2",
+        "fq": 110.0,
+        "octave":"great",
+        "pos_x": "154",
+        "pos_y": "158",
+        "audio_file": "wav_files/a2.wav"
+    },
+    {
+        "name": "A#2",
+        "fq": 116.54,
+        "octave":"great",
+        "pos_x": "167",
+        "pos_y": "158",
+        "audio_file": null
+    },
+    {
+        "name": "B2",
+        "fq": 123.47,
+        "octave":"great",
+        "pos_x": "180",
+        "pos_y": "168",
+        "audio_file": "wav_files/b2.wav"
+    },
+    {
+        "name": "C3",
+        "fq": 130.81,
+        "octave":"small",
+        "pos_x": "206",
+        "pos_y": "178",
+        "audio_file": "wav_files/c3.wav"
+    },
+    {
+        "name": "C#3",
+        "fq": 138.59,
+        "octave":"small",
+        "pos_x": "219",
+        "pos_y": "178",
+        "audio_file": null
+    },
+    {
+        "name": "D3",
+        "fq": 146.83,
+        "octave":"small",
+        "pos_x": "232",
+        "pos_y": "188",
+        "audio_file": "wav_files/d3.wav"
+    },
+    {
+        "name": "D#3",
+        "fq": 155.56,
+        "octave":"small",
+        "pos_x": "245",
+        "pos_y": "188",
+        "audio_file": null
+    },
+    {
+        "name": "E3",
+        "fq": 164.81,
+        "octave":"small",
+        "pos_x": "258",
+        "pos_y": "198",
+        "audio_file": "wav_files/e3.wav"
+    },
+    {
+        "name": "F3",
+        "fq": 174.61,
+        "octave":"small",
+        "pos_x": "284",
+        "pos_y": "208",
+        "audio_file": "wav_files/f3.wav"
+    },
+    {
+        "name": "F#3",
+        "fq": 185.0,
+        "octave":"small",
+        "pos_x": "297",
+        "pos_y": "208",
+        "audio_file": null
+    },
+    {
+        "name": "G3",
+        "fq": 196.0,
+        "octave":"small",
+        "pos_x": "310",
+        "pos_y": "218",
+        "audio_file": "wav_files/g3.wav"
+    },
+    {
+        "name": "G#3",
+        "fq": 207.65,
+        "octave":"small",
+        "pos_x": "323",
+        "pos_y": "218",
+        "audio_file": null
+    },
+    {
+        "name": "A3",
+        "fq": 220.0,
+        "octave":"small",
+        "pos_x": "336",
+        "pos_y": "228",
+        "audio_file": "wav_files/a3.wav"
+    },
+    {
+        "name": "A#3",
+        "fq": 233.08,
+        "octave":"small",
+        "pos_x": "349",
+        "pos_y": "228",
+        "audio_file": null
+    },
+    {
+        "name": "B3",
+        "fq": 246.94,
+        "octave":"small",
+        "pos_x": "362",
+        "pos_y": "238",
+        "audio_file": "wav_files/b3.wav"
+    },
+    {
+        "name": "C4",
+        "fq": 261.63,
+        "octave": "one-line",
+        "pos_x": "388",
+        "pos_y": "248",
+        "audio_file": "wav_files/c4.wav"
+    },
+    {
+        "name": "C#4",
+        "fq": 277.18,
+        "octave": "one-line",
+        "pos_x": "401",
+        "pos_y": "248",
+        "audio_file": null
+    },
+    {
+        "name": "D4",
+        "fq": 293.66,
+        "octave": "one-line",
+        "pos_x": "414",
+        "pos_y": "258",
+        "audio_file": "wav_files/d4.wav"
+    },
+    {
+        "name": "D#4",
+        "fq": 311.13,
+        "octave": "one-line",
+        "pos_x": "427",
+        "pos_y": "258",
+        "audio_file": null
+    },
+    {
+        "name": "E4",
+        "fq": 329.63,
+        "octave": "one-line",
+        "pos_x": "440",
+        "pos_y": "268",
+        "audio_file": "wav_files/e4.wav"
+    },
+    {
+        "name": "F4",
+        "fq": 349.23,
+        "octave": "one-line",
+        "pos_x": "466",
+        "pos_y": "278",
+        "audio_file": "wav_files/f4.wav"
+    },
+    {
+        "name": "F#4",
+        "fq": 369.99,
+        "octave": "one-line",
+        "pos_x": "479",
+        "pos_y": "278",
+        "audio_file": null
+    },
+    {
+        "name": "G4",
+        "fq": 392.0,
+        "octave": "one-line",
+        "pos_x": "492",
+        "pos_y": "288",
+        "audio_file": "wav_files/g4.wav"
+    },
+    {
+        "name": "G#4",
+        "fq": 415.3,
+        "octave": "one-line",
+        "pos_x": "505",
+        "pos_y": "288",
+        "audio_file": null
+    },
+    {
+        "name": "A4",
+        "fq": 440.0,
+        "octave": "one-line",
+        "pos_x": "518",
+        "pos_y": "298",
+        "audio_file": "wav_files/a4.wav"
+    },
+    {
+        "name": "A#4",
+        "fq": 466.16,
+        "octave": "one-line",
+        "pos_x": "531",
+        "pos_y": "298",
+        "audio_file": null
+    },
+    {
+        "name": "B4",
+        "fq": 493.88,
+        "octave": "one-line",
+        "pos_x": "544",
+        "pos_y": "308",
+        "audio_file": "wav_files/b4.wav"
+    },
+    {
+        "name": "C5",
+        "fq": 523.25,
+        "octave": "two-line",
+        "pos_x": "570",
+        "pos_y": "318",
+        "audio_file": "wav_files/c5.wav"
+    },
+    {
+        "name": "C#5",
+        "fq": 554.37,
+        "octave": "two-line",
+        "pos_x": "583",
+        "pos_y": "318",
+        "audio_file": null
+    },
+    {
+        "name": "D5",
+        "fq": 587.33,
+        "octave": "two-line",
+        "pos_x": "596",
+        "pos_y": "328",
+        "audio_file": "wav_files/d5.wav"
+    },
+    {
+        "name": "D#5",
+        "fq": 622.25,
+        "octave": "two-line",
+        "pos_x": "609",
+        "pos_y": "328",
+        "audio_file": null
+    },
+    {
+        "name": "E5",
+        "fq": 659.26,
+        "octave": "two-line",
+        "pos_x": "622",
+        "pos_y": "338",
+        "audio_file": "wav_files/e5.wav"
+    },
+    {
+        "name": "F5",
+        "fq": 698.46,
+        "octave": "two-line",
+        "pos_x": "648",
+        "pos_y": "348",
+        "audio_file": "wav_files/f5.wav"
+    },
+    {
+        "name": "F#5",
+        "fq": 739.99,
+        "octave": "two-line",
+        "pos_x": "661",
+        "pos_y": "348",
+        "audio_file": null
+    },
+    {
+        "name": "G5",
+        "fq": 783.99,
+        "octave": "two-line",
+        "pos_x": "674",
+        "pos_y": "358",
+        "audio_file": "wav_files/g5.wav"
+    },
+    {
+        "name": "G#5",
+        "fq": 830.61,
+        "octave": "two-line",
+        "pos_x": "687",
+        "pos_y": "358",
+        "audio_file": null
+    },
+    {
+        "name": "A5",
+        "fq": 880.0,
+        "octave": "two-line",
+        "pos_x": "700",
+        "pos_y": "368",
+        "audio_file": "wav_files/a5.wav"
+    },
+    {
+        "name": "A#5",
+        "fq": 932.33,
+        "octave": "two-line",
+        "pos_x": "713",
+        "pos_y": "368",
+        "audio_file": null
+    },
+    {
+        "name": "B5",
+        "fq": 987.77,
+        "octave": "two-line",
+        "pos_x": "null",
+        "pos_y": "null",
+        "audio_file": "wav_files/b5.wav"
+    }
+]
